@@ -46,3 +46,13 @@ h1 {
 .mes_siguiente {
     margin-left: auto;
 }
+
+.calendario_semana {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px; 
+}
+
+.item {
+    text-align: center;
+    line-height: 2; }
