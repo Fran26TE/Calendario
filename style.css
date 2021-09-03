@@ -1,0 +1,15 @@
+body {
+    background-color: #333333;
+}
+
+h1 {
+    text-align: center;
+    color: #cecece;
+}
+
+.calendario {
+    background-color: #cecece;
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+}
