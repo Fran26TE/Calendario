@@ -56,12 +56,10 @@ h1 {
     margin-left: auto;
 }
 
-.calendario_dias {
-    height: 300px;
-}
+
 
 .calendario_semana, .calendario_dias {
-    padding: 5px;
+
     background-color: #cecece;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
