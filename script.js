@@ -22,37 +22,24 @@ siguiente_mes.addEventListener('click', mes_siguiente());
 
 // Función que se encarga de escribir lo meses, recibe el parámetro de la variable mes.
 function escribe_mes(mes) {
-
-
-
-
-
-
+    //Bucle for para los días del último mes
     for (let i = inicio_semana(); i > 0; i--) {
-        dia.innerHTML += ` <div class=" item dias_mes_anterior">
-            ${total_dias(mes_actual - 1) - (i - 1)}
-        </div>`;
+        dia.innerHTML += "<div class='item dias_mes_anterior'>" + (total_dias(mes_actual - 1) - (i - 1)) + "</div>";
     }
 
+    //Bucle for para los días del mes actual
     for (let i = 1; i <= total_dias(mes); i++) {
         if (i === dia_actual) {
-            dia.innerHTML += ` <div class="calendario_hoy item">${i}</div>`;
+            dia.innerHTML += "<div class='calendario_hoy item'> "+ i +" </div>";
         } else {
-            dia.innerHTML += ` <div class="item">${i}</div>`;
+            dia.innerHTML += "<div class='item'> "+ i +" </div>";
         }
     }
 
 }
 
 // Función para saber el total de días que tiene que dibujar
-
-
-
-
-
-
-
-function total_dias() {
+function total_dias(mes) {
     if (mes === -1) mes = 11;
 
     if (mes == 0 || mes == 2 || mes == 4 || mes == 6 || mes == 7 || mes == 9 || mes == 11) {
@@ -120,4 +107,3 @@ function nueva_fecha() {
     escribe_mes(mes_actual);
 }
 
-escribe_mes(mes_actual);
