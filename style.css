@@ -56,11 +56,6 @@ h1 {
     margin-left: auto;
 }
 
-.calendario_dias {
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-
 .calendario_semana, .calendario_dias {
     background-color: #cecece;
     display: grid;

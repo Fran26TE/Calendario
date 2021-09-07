@@ -35,6 +35,7 @@ function escribe_mes(mes) {
             dia.innerHTML += "<div class='item'> " + i + " </div>";
         }
     }
+
 }
 
 // Función para saber el total de días que tiene que dibujar
