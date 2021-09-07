@@ -30,12 +30,11 @@ function escribe_mes(mes) {
     //Bucle for para los días del mes actual
     for (let i = 1; i <= total_dias(mes); i++) {
         if (i === dia_actual) {
-            dia.innerHTML += "<div class='calendario_hoy item'> "+ i +" </div>";
+            dia.innerHTML += "<div class='calendario_hoy item'> " + i + " </div>";
         } else {
-            dia.innerHTML += "<div class='item'> "+ i +" </div>";
+            dia.innerHTML += "<div class='item'> " + i + " </div>";
         }
     }
-
 }
 
 // Función para saber el total de días que tiene que dibujar
