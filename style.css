@@ -1,10 +1,10 @@
 body {
-    background-color: #333333;
+    background-color: #D5D5D5;
 }
 
 h1 {
     text-align: center;
-    color: #cecece;
+    color: #333333;
 }
 
 .calendario {
@@ -16,7 +16,7 @@ h1 {
 
 .calendario_info {
     background-color: #ff3131;
-    color: #cecece;
+    color: #D5D5D5;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     display: flex;
@@ -26,14 +26,8 @@ h1 {
     text-transform: uppercase;
 }
 
-.mes_actual {
-    margin-right: 7px;
-    padding: 15px;
-}
-
 .ano_actual {
-    margin-left: 7px;
-    padding: 15px;
+    padding: 10px;
 }
 
 .mes_anterior, .mes_siguiente {
@@ -57,10 +51,15 @@ h1 {
 }
 
 .calendario_semana, .calendario_dias {
-    background-color: #cecece;
+    background-color: #999999;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-gap: 10px;
+}
+
+.calendario_dias {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .item {
